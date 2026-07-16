@@ -13,7 +13,7 @@ describe('index.js Component Tests', () => {
         jobs: [
           { url: 'https://test.com/1', title: 'Job 1', location: ['România'] },
           { url: 'https://test.com/2', title: 'Job 2', location: ['Bucharest'] },
-          { url: 'https://test.com/3', title: 'Job 3', location: ['Bulgaria'] },
+          { url: 'https://test.com/3', title: 'Job 3', location: ['London, United Kingdom'] },
           { url: 'https://test.com/4', title: 'Job 4', location: ['Cluj-Napoca'] },
           { url: 'https://test.com/5', title: 'Job 5', location: [] }
         ]
@@ -30,17 +30,17 @@ describe('index.js Component Tests', () => {
 
     it('should keep company uppercase', () => {
       const payload = {
-        source: 'epam.com',
-        company: 'epam systems international srl',
-        cif: '33159615',
+        source: 'yougov.com',
+        company: 'yougov cp romania s.r.l.',
+        cif: '48869513',
         jobs: [
-          { url: 'https://test.com/1', title: 'Job 1', company: 'epam systems', cif: '33159615' }
+          { url: 'https://test.com/1', title: 'Job 1', company: 'yougov', cif: '48869513' }
         ]
       };
 
       const result = index.transformJobsForSOLR(payload);
 
-      expect(result.company).toBe('EPAM SYSTEMS INTERNATIONAL SRL');
+      expect(result.company).toBe('YOUGOV CP ROMANIA S.R.L.');
     });
 
     it('should normalize workmode values', () => {
@@ -70,15 +70,15 @@ describe('index.js Component Tests', () => {
   describe('mapToJobModel', () => {
     it('should map raw job to job model format', () => {
       const rawJob = {
-        url: 'https://careers.epam.com/job/123',
+        url: 'https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Bucharest-Romania/Test-Job_JR001',
         title: 'Senior Developer',
-        location: ['Bucharest'],
-        tags: ['Java', 'Spring'],
+        location: ['Bucharest, Romania'],
+        tags: ['JR001'],
         workmode: 'hybrid'
       };
 
-      const COMPANY_NAME = 'EPAM SYSTEMS INTERNATIONAL SRL';
-      const COMPANY_CIF = '33159615';
+      const COMPANY_NAME = 'YOUGOV CP ROMANIA S.R.L.';
+      const COMPANY_CIF = '48869513';
 
       const result = index.mapToJobModel(rawJob, COMPANY_CIF, COMPANY_NAME);
 
@@ -99,7 +99,7 @@ describe('index.js Component Tests', () => {
         title: 'Job 1'
       };
 
-      const result = index.mapToJobModel(rawJob, '33159615');
+      const result = index.mapToJobModel(rawJob, '48869513');
 
       expect(result.location).toBeUndefined();
       expect(result.tags).toBeUndefined();
@@ -109,7 +109,7 @@ describe('index.js Component Tests', () => {
     it('should handle missing title', () => {
       const rawJob = { url: 'https://test.com/1' };
 
-      const result = index.mapToJobModel(rawJob, '33159615');
+      const result = index.mapToJobModel(rawJob, '48869513');
 
       expect(result.title).toBeUndefined();
       expect(result.url).toBe('https://test.com/1');
@@ -117,33 +117,31 @@ describe('index.js Component Tests', () => {
   });
 
   describe('parseApiJobs', () => {
-    it('should parse EPAM API response format', () => {
+    it('should parse Workday API response format', () => {
       const apiData = {
-        data: {
-          total: 100,
-          jobs: [
-            {
-              uid: '123',
-              name: 'Senior Developer',
-              city: [{ name: 'Bucharest' }],
-              country: [{ name: 'Romania' }],
-              vacancy_type: 'Hybrid',
-              skills: ['Java', 'Spring']
-            }
-          ]
-        }
+        total: 30,
+        jobPostings: [
+          {
+            title: 'Senior Developer',
+            externalPath: '/job/Bucharest-Romania/Senior-Developer_JR001',
+            locationsText: 'Bucharest, Romania',
+            postedOn: 'Posted Today',
+            bulletFields: ['JR001']
+          }
+        ]
       };
 
       const result = index.parseApiJobs(apiData);
 
       expect(result.jobs).toHaveLength(1);
       expect(result.jobs[0].title).toBe('Senior Developer');
-      expect(result.jobs[0].location).toEqual(['Bucharest']);
-      expect(result.jobs[0].workmode).toBe('hybrid');
+      expect(result.jobs[0].location).toEqual(['Bucharest', 'Romania']);
+      expect(result.jobs[0].url).toContain('yougov.wd103.myworkdayjobs.com');
+      expect(result.jobs[0].uid).toBe('JR001');
     });
 
     it('should handle empty job list', () => {
-      const apiData = { data: { total: 0, jobs: [] } };
+      const apiData = { total: 0, jobPostings: [] };
 
       const result = index.parseApiJobs(apiData);
 
@@ -156,65 +154,61 @@ describe('index.js Component Tests', () => {
       expect(result.jobs).toEqual([]);
     });
 
-    it('should handle multiple cities', () => {
+    it('should handle jobs with "N Locations" text', () => {
       const apiData = {
-        data: {
-          total: 1,
-          jobs: [
-            {
-              uid: '123',
-              name: 'Developer',
-              city: [{ name: 'Bucharest' }, { name: 'Cluj-Napoca' }],
-              country: [{ name: 'Romania' }]
-            }
-          ]
-        }
+        total: 1,
+        jobPostings: [
+          {
+            title: 'Research Manager',
+            externalPath: '/job/Multiple/Research-Manager_JR002',
+            locationsText: '4 Locations',
+            bulletFields: ['JR002']
+          }
+        ]
       };
 
       const result = index.parseApiJobs(apiData);
 
-      expect(result.jobs[0].location).toEqual(['Bucharest', 'Cluj-Napoca']);
+      expect(result.jobs[0].location).toEqual([]);
+    });
+
+    it('should extract job ID from bulletFields', () => {
+      const apiData = {
+        total: 1,
+        jobPostings: [
+          {
+            title: 'Data Analyst',
+            externalPath: '/job/London-UK/Data-Analyst_JR003',
+            locationsText: 'London, United Kingdom',
+            bulletFields: ['JR003']
+          }
+        ]
+      };
+
+      const result = index.parseApiJobs(apiData);
+
+      expect(result.jobs[0].uid).toBe('JR003');
+      expect(result.jobs[0].tags).toEqual(['JR003']);
     });
   });
 
   describe('URL Generation', () => {
-    it('should use seo.url when available', () => {
+    it('should build correct Workday URL from externalPath', () => {
       const apiData = {
-        data: {
-          total: 1,
-          jobs: [
-            {
-              uid: 'blt123',
-              name: 'Test Job',
-              seo: { url: '/en/vacancy/test-job-blt123_en' },
-              city: [{ name: 'Bucharest' }]
-            }
-          ]
-        }
+        total: 1,
+        jobPostings: [
+          {
+            title: 'Test Job',
+            externalPath: '/job/Bucharest-Romania/Test-Job_JR001',
+            locationsText: 'Bucharest, Romania',
+            bulletFields: ['JR001']
+          }
+        ]
       };
 
       const result = index.parseApiJobs(apiData);
 
-      expect(result.jobs[0].url).toBe('https://careers.epam.com/en/vacancy/test-job-blt123_en');
-    });
-
-    it('should fallback to uid-based URL when no seo.url', () => {
-      const apiData = {
-        data: {
-          total: 1,
-          jobs: [
-            {
-              uid: 'blt456',
-              name: 'Test Job',
-              city: [{ name: 'Bucharest' }]
-            }
-          ]
-        }
-      };
-
-      const result = index.parseApiJobs(apiData);
-
-      expect(result.jobs[0].url).toBe('https://careers.epam.com/en/vacancy/blt456_en');
+      expect(result.jobs[0].url).toBe('https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Bucharest-Romania/Test-Job_JR001');
     });
   });
 });

@@ -1,6 +1,6 @@
 # job_seeker_ro_spider
 
-**job_seeker_ro_spider** — scraper pentru job-urile EPAM Systems din România.
+**job_seeker_ro_spider** — scraper pentru job-urile YouGov din România.
 
 Extrage anunțurile de pe [EPAM Careers Romania](https://careers.epam.com/en/jobs/romania) și le publică în [peviitor.ro](https://peviitor.ro) prin API-ul SOLR.
 

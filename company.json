@@ -1,82 +1,100 @@
 {
-  "validatedAt": "2026-04-14T09:42:51.290Z",
+  "validatedAt": "2026-07-16T16:40:39.006Z",
   "source": "ANAF",
-  "brand": "EPAM",
+  "brand": "YouGov",
   "anaf": {
-    "cui": 33159615,
-    "name": "EPAM SYSTEMS INTERNATIONAL SRL",
-    "address": "MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9",
-    "registrationNumber": "J2014005735405",
-    "phone": "",
+    "cui": 48869513,
     "fax": "",
-    "postalCode": "11745",
-    "caenCode": "6220",
     "iban": "",
-    "registrationState": "TRANSFER(SOSIRE) din data 20.04.2022",
-    "registrationDate": "2014-05-14",
-    "fiscalAuthority": "Direcţia Generală a Finanţelor Publice Municipiul Bucureşti",
-    "ownershipForm": "PROPR.PRIVATA-CAPITAL PRIVAT STRAIN",
-    "organizationForm": "PERSOANA JURIDICA",
-    "legalForm": "SOCIETATE COMERCIALĂ CU RĂSPUNDERE LIMITATĂ",
-    "vatRegistered": true,
+    "name": "YOUGOV CP ROMANIA S.R.L.",
+    "phone": "",
+    "address": "GRIGORE ALEXANDRESCU, 89-97, Bucureşti Sectorul 1, Bucureşti",
+    "caenCode": "7320",
+    "inactive": false,
+    "splitVat": false,
+    "legalForm": "SRL",
+    "postalCode": "",
     "vatPeriods": [
       {
-        "start": "2020-07-24",
         "end": null,
-        "yearStart": "",
-        "message": ""
+        "start": "2023-10-09",
+        "message": "",
+        "yearStart": ""
       }
     ],
     "cashBasisVat": false,
-    "cashBasisVatStart": null,
-    "cashBasisVatEnd": null,
-    "inactive": false,
-    "inactiveSince": "2018-12-27",
-    "reactivatedSince": "2020-05-13",
-    "splitVat": false,
-    "eFacturaRegistered": false,
-    "headquartersAddress": {
-      "street": "Bld. Iancu de Hunedoara",
-      "number": "48",
-      "locality": "Sector 1 Mun. Bucureşti",
-      "county": "MUNICIPIUL BUCUREŞTI",
-      "country": "",
-      "postalCode": "11745"
-    },
     "fiscalAddress": {
-      "street": "",
-      "number": "",
-      "locality": "",
       "county": "",
+      "number": "",
+      "street": "",
       "country": "",
+      "locality": "",
+      "postalCode": ""
+    },
+    "inactiveSince": null,
+    "ownershipForm": "PROPR.PRIVATA-CAPITAL PRIVAT STRAIN",
+    "vatRegistered": true,
+    "cashBasisVatEnd": null,
+    "fiscalAuthority": "Administraţia Sector 1 a Finanţelor Publice",
+    "organizationForm": "PERSOANA JURIDICA",
+    "reactivatedSince": null,
+    "registrationDate": "29/09/2023",
+    "cashBasisVatStart": null,
+    "registrationState": "TRANSFER(SOSIRE) din data 01.10.2025",
+    "eFacturaRegistered": false,
+    "registrationNumber": "J2023018302409",
+    "headquartersAddress": {
+      "street": "GRIGORE ALEXANDRESCU",
+      "number": "89-97",
+      "locality": "Bucureşti Sectorul 1",
+      "county": "Bucureşti",
+      "country": "România",
       "postalCode": ""
     },
     "administrators": [
       {
-        "name": "JASON PETERSON",
-        "role": "administrator"
+        "id": 21753038,
+        "name": "MARIN COSMIN-MIHAIL",
+        "role": "administrator",
+        "personId": 1214727,
+        "gdprHidden": false
+      },
+      {
+        "id": 21512925,
+        "name": "SCĂUNAŞU DIANA-CRISTINA",
+        "role": "administrator",
+        "personId": 2266368,
+        "gdprHidden": false
       }
     ],
     "authorizedCaenCodes": [
+      "5819",
+      "5829",
       "6210",
       "6220",
       "6290",
+      "6310",
       "7020",
-      "8559"
+      "7320",
+      "8220",
+      "8299"
     ],
     "onrcStatus": 1048,
-    "onrcStatusLabel": "Funcțiune"
+    "onrcStatusLabel": "Funcțiune",
+    "vatCheckedAt": "2026-07-16T16:30:16.035Z",
+    "vatStatus": "fresh",
+    "datoriiAnaf": null
   },
   "peviitor": null,
   "summary": {
-    "company": "EPAM SYSTEMS INTERNATIONAL SRL",
-    "cif": "33159615",
+    "company": "YOUGOV CP ROMANIA S.R.L.",
+    "cif": "48869513",
     "active": true,
-    "inactiveSince": "2018-12-27",
-    "reactivatedSince": "2020-05-13",
-    "address": "MUNICIPIUL BUCUREŞTI, SECTOR 1, BLD IANCU DE HUNEDOARA, NR.48, ET.9",
-    "registrationNumber": "J2014005735405",
-    "caenCode": "6220",
+    "inactiveSince": null,
+    "reactivatedSince": null,
+    "address": "GRIGORE ALEXANDRESCU, 89-97, Bucureşti Sectorul 1, Bucureşti",
+    "registrationNumber": "J2023018302409",
+    "caenCode": "7320",
     "vatRegistered": true,
     "eFacturaRegistered": false
   }

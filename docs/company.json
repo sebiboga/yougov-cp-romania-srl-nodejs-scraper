@@ -1,11 +1,11 @@
 {
-  "cif": "33159615",
-  "legalName": "EPAM SYSTEMS INTERNATIONAL SRL",
-  "brand": "EPAM",
-  "website": "https://www.epam.com",
-  "careerUrl": "https://careers.epam.com",
-  "apiBase": "https://careers.epam.com",
-  "apiCountryId": "8150000000000001155",
+  "cif": "48869513",
+  "legalName": "YOUGOV CP ROMANIA S.R.L.",
+  "brand": "YouGov",
+  "website": "https://yougov.com",
+  "careerUrl": "https://jobs.yougov.com",
+  "apiBase": "https://yougov.wd103.myworkdayjobs.com",
+  "apiPath": "/wday/cxs/yougov/YouGov_External_Careers/jobs",
   "defaultLocation": "București",
-  "scraperFile": "https://raw.githubusercontent.com/sebiboga/epam-systems-international-srl-nodejs-scraper/main/.github/workflows/job-seeker-ro-spider.yml"
+  "scraperFile": "https://raw.githubusercontent.com/sebiboga/yougov-cp-romania-srl-nodejs-scraper/main/.github/workflows/job-seeker-ro-spider.yml"
 }
