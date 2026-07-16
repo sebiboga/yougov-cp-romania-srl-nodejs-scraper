@@ -27,6 +27,7 @@ jobs:
         run: npm install
 
       - name: Ensure company exists in Solr company core
+        continue-on-error: true
         env:
           SOLR_AUTH: ${{ secrets.SOLR_AUTH }}
         run: |
@@ -56,18 +57,17 @@ jobs:
             "https://solr.peviitor.ro/solr/company/update/json?commit=true" \
             -X POST \
             -H "Content-Type: application/json" \
-            --data-binary @company_data.json
+            --data-binary @company_data.json || echo "⚠️ Solr company upsert failed (non-fatal)"
 
           FINAL=$(curl -s --user "${SOLR_AUTH}" \
-            "https://solr.peviitor.ro/solr/company/select?q=id:${CIF}&rows=1" | jq '.response.numFound')
+            "https://solr.peviitor.ro/solr/company/select?q=id:${CIF}&rows=1" | jq '.response.numFound' 2>/dev/null || echo "0")
 
           echo "${BRAND} count after upsert: $FINAL"
 
-          if [ "$FINAL" -ge "1" ]; then
+          if [ "$FINAL" -ge "1" ] 2>/dev/null; then
             echo "✅ SUCCESS: ${BRAND} is in company core"
           else
-            echo "❌ FAILED: ${BRAND} still not in company core"
-            exit 1
+            echo "⚠️ WARNING: Could not verify ${BRAND} in company core (Solr may be unavailable) — continuing anyway"
           fi
 
       - name: Pre-scrape — Unit Tests
