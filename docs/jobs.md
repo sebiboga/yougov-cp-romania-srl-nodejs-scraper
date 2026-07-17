@@ -10,11 +10,11 @@
 | Location | GRIGORE ALEXANDRESCU, 89-97, Bucureşti Sectorul 1, Bucureşti |
 | Website | [https://yougov.com](https://yougov.com) |
 | Careers | [https://jobs.yougov.com](https://jobs.yougov.com) |
-| Last Scraped | 2026-07-16 |
+| Last Scraped | 2026-07-17 |
 
 ## Current Job Listings (30)
 
-_Generated: 2026-07-16T18:05:20.796Z_
+_Generated: 2026-07-17T08:10:04.973Z_
 
 ### Praktikum (m/w/d) Marktforschung - Retail
 
