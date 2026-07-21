@@ -10,19 +10,11 @@
 | Location | GRIGORE ALEXANDRESCU, 89-97, Bucureşti Sectorul 1, Bucureşti |
 | Website | [https://yougov.com](https://yougov.com) |
 | Careers | [https://jobs.yougov.com](https://jobs.yougov.com) |
-| Last Scraped | 2026-07-20 |
+| Last Scraped | 2026-07-21 |
 
-## Current Job Listings (32)
+## Current Job Listings (31)
 
-_Generated: 2026-07-20T08:57:46.185Z_
-
-### Research Executive
-
-- **URL:** [https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Mexico-City-Mexico/Research-Executive_JR0873-1](https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Mexico-City-Mexico/Research-Executive_JR0873-1)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** JR0873
-- **Status:** scraped
+_Generated: 2026-07-21T08:28:21.518Z_
 
 ### Account Director
 
