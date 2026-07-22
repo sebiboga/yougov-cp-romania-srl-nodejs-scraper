@@ -10,11 +10,35 @@
 | Location | GRIGORE ALEXANDRESCU, 89-97, Bucureşti Sectorul 1, Bucureşti |
 | Website | [https://yougov.com](https://yougov.com) |
 | Careers | [https://jobs.yougov.com](https://jobs.yougov.com) |
-| Last Scraped | 2026-07-21 |
+| Last Scraped | 2026-07-22 |
 
-## Current Job Listings (31)
+## Current Job Listings (30)
 
-_Generated: 2026-07-21T08:28:21.518Z_
+_Generated: 2026-07-22T08:29:23.176Z_
+
+### Working Student FMCG Product Classification
+
+- **URL:** [https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Wien-Austria/Working-Student-FMCG-Product-Classification_JR0917](https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Wien-Austria/Working-Student-FMCG-Product-Classification_JR0917)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** JR0917
+- **Status:** scraped
+
+### (Senior) Account Manager (m/w/d)
+
+- **URL:** [https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Kln-Germany/XMLNAME--Senior--Account-Manager--m-w-d-_JR0926-2](https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Kln-Germany/XMLNAME--Senior--Account-Manager--m-w-d-_JR0926-2)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** JR0926
+- **Status:** scraped
+
+### Sales Representative (m/w/d)
+
+- **URL:** [https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Kln-Germany/Sales-Representative--m-w-d-_JR0925](https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Kln-Germany/Sales-Representative--m-w-d-_JR0925)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** JR0925
+- **Status:** scraped
 
 ### Account Director
 
@@ -22,22 +46,6 @@ _Generated: 2026-07-21T08:28:21.518Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** JR0912
-- **Status:** scraped
-
-### Praktikum (m/w/d) Marktforschung - Retail
-
-- **URL:** [https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Nuremberg-Germany/Praktikum--m-w-d--Marktforschung---Retail_JR0915](https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Nuremberg-Germany/Praktikum--m-w-d--Marktforschung---Retail_JR0915)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** JR0915
-- **Status:** scraped
-
-### Junior Data & Analytics Innovation Scientist
-
-- **URL:** [https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Zurich-Switzerland/Junior-Data---Analytics-Innovation-Scientist_JR0916](https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Zurich-Switzerland/Junior-Data---Analytics-Innovation-Scientist_JR0916)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** JR0916
 - **Status:** scraped
 
 ### Werkstudent*in - CP Hotline (m/w/d)
@@ -70,22 +78,6 @@ _Generated: 2026-07-21T08:28:21.518Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** JR0883
-- **Status:** scraped
-
-### Junior Research Consultant
-
-- **URL:** [https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Zurich-Switzerland/Junior-Research-Consultant_JR0908](https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Zurich-Switzerland/Junior-Research-Consultant_JR0908)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** JR0908
-- **Status:** scraped
-
-### Junior Research Consultant - Healthcare (60–80%)
-
-- **URL:** [https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Zurich-Switzerland/Junior-Research-Consultant---Healthcare--60-80--_JR0910](https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Zurich-Switzerland/Junior-Research-Consultant---Healthcare--60-80--_JR0910)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** JR0910
 - **Status:** scraped
 
 ### Research Manager
