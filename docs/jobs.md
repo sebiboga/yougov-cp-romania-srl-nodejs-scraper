@@ -10,11 +10,35 @@
 | Location | GRIGORE ALEXANDRESCU, 89-97, Bucureşti Sectorul 1, Bucureşti |
 | Website | [https://yougov.com](https://yougov.com) |
 | Careers | [https://jobs.yougov.com](https://jobs.yougov.com) |
-| Last Scraped | 2026-07-22 |
+| Last Scraped | 2026-07-23 |
 
-## Current Job Listings (30)
+## Current Job Listings (32)
 
-_Generated: 2026-07-22T08:29:23.176Z_
+_Generated: 2026-07-23T08:29:39.884Z_
+
+### Research Manager
+
+- **URL:** [https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Bangkok-Thailand/Research-Manager_JR0896-1](https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Bangkok-Thailand/Research-Manager_JR0896-1)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** JR0896
+- **Status:** scraped
+
+### HR Operations Executive
+
+- **URL:** [https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Mumbai-India/HR-Operations-Executive_JR0930](https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Mumbai-India/HR-Operations-Executive_JR0930)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** JR0930
+- **Status:** scraped
+
+### Junior Research Consultant, Financial Services & Media
+
+- **URL:** [https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Zurich-Switzerland/Junior-Research-Consultant--Financial-Services---Media_JR0929](https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Zurich-Switzerland/Junior-Research-Consultant--Financial-Services---Media_JR0929)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** JR0929
+- **Status:** scraped
 
 ### Working Student FMCG Product Classification
 
@@ -182,14 +206,6 @@ _Generated: 2026-07-22T08:29:23.176Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** JR0897
-- **Status:** scraped
-
-### Research Manager
-
-- **URL:** [https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Bangkok-Thailand/Research-Manager_JR0896-1](https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Bangkok-Thailand/Research-Manager_JR0896-1)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** JR0896
 - **Status:** scraped
 
 ### Associate Research Manager
