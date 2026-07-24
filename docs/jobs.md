@@ -10,11 +10,43 @@
 | Location | GRIGORE ALEXANDRESCU, 89-97, Bucureşti Sectorul 1, Bucureşti |
 | Website | [https://yougov.com](https://yougov.com) |
 | Careers | [https://jobs.yougov.com](https://jobs.yougov.com) |
-| Last Scraped | 2026-07-23 |
+| Last Scraped | 2026-07-24 |
 
-## Current Job Listings (32)
+## Current Job Listings (35)
 
-_Generated: 2026-07-23T08:29:39.884Z_
+_Generated: 2026-07-24T08:27:30.901Z_
+
+### Senior Data Scientist
+
+- **URL:** [https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Zurich-Switzerland/Senior-Data-Scientist_JR0850](https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Zurich-Switzerland/Senior-Data-Scientist_JR0850)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** JR0850
+- **Status:** scraped
+
+### Praktikant*in oder Werkstudent*in (m/w/d) in Market Research im Advanced Solutions Team
+
+- **URL:** [https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Nuremberg-Germany/Werkstudent-in--m-w-d--in-Market-Research-im-Advanced-Solutions-Team_JR0919](https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Nuremberg-Germany/Werkstudent-in--m-w-d--in-Market-Research-im-Advanced-Solutions-Team_JR0919)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** JR0919
+- **Status:** scraped
+
+### Werkstudent:in (m/w/d) - Media & Entertainment
+
+- **URL:** [https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Nuremberg-Germany/Werkstudent-in--m-w-d----Media---Entertainment_JR0934](https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Nuremberg-Germany/Werkstudent-in--m-w-d----Media---Entertainment_JR0934)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** JR0934
+- **Status:** scraped
+
+### Client Service Consultant
+
+- **URL:** [https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Sofia-Bulgaria/Client-Service-Consultant_JR0933-1](https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Sofia-Bulgaria/Client-Service-Consultant_JR0933-1)
+- **Work Mode:** hybrid
+- **Location:** România
+- **Tags:** JR0933
+- **Status:** scraped
 
 ### Research Manager
 
@@ -46,14 +78,6 @@ _Generated: 2026-07-23T08:29:39.884Z_
 - **Work Mode:** hybrid
 - **Location:** România
 - **Tags:** JR0917
-- **Status:** scraped
-
-### (Senior) Account Manager (m/w/d)
-
-- **URL:** [https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Kln-Germany/XMLNAME--Senior--Account-Manager--m-w-d-_JR0926-2](https://yougov.wd103.myworkdayjobs.com/en-US/YouGov_External_Careers/job/Kln-Germany/XMLNAME--Senior--Account-Manager--m-w-d-_JR0926-2)
-- **Work Mode:** hybrid
-- **Location:** România
-- **Tags:** JR0926
 - **Status:** scraped
 
 ### Sales Representative (m/w/d)
